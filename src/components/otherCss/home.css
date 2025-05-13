@@ -1,0 +1,268 @@
+.bgcss{
+    width: 100%;
+    height: 100%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: upDownAndBack 100s linear infinite;
+    perspective: 1000px;
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    background-color: rgba(21, 93, 149, 0.51);
+}
+
+@keyframes upDpwn {
+    0% {
+        background-position: 0px 0%;
+    }
+    100% {
+        background-position: 0px 100%;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        background-position: 0% 0px;
+    }
+    50% {
+        background-position: 100% 0px;
+    }
+    100% {
+        background-position: 0% 0px;
+    }
+}
+
+@keyframes down {
+    100% {
+        background-position: 0px 100%;
+    }
+}
+
+@keyframes upDownAndBack {
+    0% {
+        background-position: 0px 0%;
+    }
+    50% {
+        background-position: 0px 100%;
+    }
+    100% {
+        background-position: 0px 0%;
+    }
+}
+
+.bgcssMedia{
+    width: 100%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: leftToRight 100s linear infinite;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background-color: rgba(21, 93, 149, 0.51);
+}
+
+@media screen and (max-width: 992px) {
+    .bgcss{
+        width: 100%;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: leftToRight 100s linear infinite;
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        background-color: rgba(21, 93, 149, 0.51);
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+  
+.slide.active {
+    opacity: 1;
+}
+
+.firstdots {
+    transform: translate3d(6rem, -2rem, 0);
+}
+
+.tryFirst {
+    transition: .3s;
+    animation: imagecurves 5s infinite;
+}
+@keyframes imagecurves {
+    50% {border-radius: 34% 66% 68% 32% / 30% 30% 70% 70%;}
+}
+.tryborder {
+    width: 100%;
+    height: 100%;
+    transform: translate3d(3rem, -3rem, 0px);
+    /* border-top-left-radius: 34% 30%;
+    border-top-right-radius: 66% 30%;
+    border-bottom-right-radius: 68% 70%;
+    border-bottom-left-radius: 32% 70%; */
+    object-fit: cover;
+    animation: imagecurve 5s infinite;
+}
+
+@keyframes imagecurve {
+    50% {border-radius: 34% 66% 68% 32% / 30% 30% 70% 70%;}
+}
+
+.wedoitall {
+    border-radius: 59% 41% 70% 30% / 78% 71% 29% 22%;
+}
+
+.specky {
+    background: linear-gradient(126deg, #DC143C 39%, orange);
+}
+
+.service-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: scrollUp 15s linear infinite;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+.service-content:nth-child(2) {
+    top: 600px;
+    animation-delay: 5s;
+}
+
+.service-div {
+    height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi{
+    visibility: visible; 
+    opacity: 1; 
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 2.4s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2.4s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+}
+
+.fira{
+    background-color: rgba(31, 27, 29, 0.575);   
+}
+
+.expand_icon {
+    background-color: orange;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* bg-[rgba(31, 27, 29, 0.12)] #26d367 #DC143C*/
+}
+
+.geffect{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+
+.geffectsec{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.geffectsvg{
+    color: black;
+}
+
+.mymover{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: 200% 100%;
+    animation: speccy 4s infinite;
+}
+
+@keyframes speccy {
+    0% {
+        background-position: -100% 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.boreff {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, #fff 50%, transparent 50%) 2;
+    border-image-slice: 1;
+    animation: myborder 6s infinite linear;
+}
+
+@keyframes myborder {
+    0% {
+        border-image: linear-gradient(to right, #fff 0%, transparent 0%) 2;
+        border-image-slice: 1;
+    }
+    100% {
+        border-image: linear-gradient(to right, transparent 0%, #fff 100%,) 2;
+        border-image-slice: 1;
+    }
+}
+
+.boreff::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 20px 2px;
+    animation: mybeforeborder 6s infinite linear;
+}
+
+@keyframes mybeforeborder {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.boreff::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #fff 50%, transparent 50%);
+    background-size: 2px 20px;
+    animation: myafterborder 6s infinite linear;
+}
+
+@keyframes myafterborder {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btnbg {
+    background-color: orange;
+}
+
+.givelor{
+    background-color: green ;
+    color: green ;
+}
