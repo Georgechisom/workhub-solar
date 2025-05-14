@@ -270,7 +270,7 @@ const HomePage = () => {
   return (
     <div className='my-auto'>
       <Navbar />
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-16 items-center justify-center bgcss' style={{ backgroundImage: `url('${slideData[currentIndex].url}')` }}>
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-16 items-center justify-center bgcss' style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, objectFit: "cover" }}>
         <div className='flex items-center justify-between px-6 lg:px-20'>
           <Link><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer'/></Link>
           <div className='flex flex-col text-white gap-y-2 md:gap-y-3 lg:gap-y-4 py-8 font-semibold'>
@@ -297,7 +297,7 @@ const HomePage = () => {
       </section>
 
       {/* about us */}
-      <section className='max-w-screen-xl mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
+      <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
         <div>
           {/* <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold">
             Hello World
