@@ -554,28 +554,28 @@ const HomePage = () => {
               <input 
                 type='text' 
                 name='from_name' 
-                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 md:px-4 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
+                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
                 placeholder='Your Name'/>
               <input 
                 type='email' 
                 name='from_email' 
-                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 md:px-4 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
+                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
                 placeholder='Your Email' />
               <input 
                 type='number' 
                 name='from_number' 
-                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 md:px-4 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
+                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
                 placeholder='Phone Number' />
               <input 
                 type='text' 
                 name='from_job' 
-                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 md:px-4 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
+                className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
                 placeholder='Your Job' />
             </div>
             <textarea 
               name='message' 
               rows="2" 
-              className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 md:px-4 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
+              className='font-medium w-full max-w-[40rem] my-3 border-b-2 border-[orange] py-4 md:px-4 px-8 content-center text-black  hover:border-1 hover:border-[black] hover:rounded-xl hover:shadow-[black] hover:shadow-md placeholder:text-black focus:border-none'
               placeholder='Your Message'></textarea>
             <button 
             type='submit' 
