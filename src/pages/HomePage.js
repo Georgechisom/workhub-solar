@@ -304,7 +304,7 @@ const HomePage = () => {
           </h1> */}
           <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center py-5 px-5 gap-x-2 mt-10 overflow-hidden'>
             <div className='text-left'>
-              <h1 className='font-medium text-xl md:text-2xl py-1 text-black border-b-2 border-b-black border-dotted w-24 md:w-28'>About Us</h1>
+              <h1 className='font-medium text-xl md:text-2xl py-1 text-black border-b-2 border-b-black border-dotted w-24 md:w-28 text-nowrap'>About Us</h1>
               <h3 className='font-bold text-2xl md:text-3xl py-4 text-[#DC143C]'>Your Trusted Service Provider for Plumbing, Electrical, Solar Solutions and More</h3>
               <p className='text-sm'>
                 With years of experience and a team of dedicated professionals, we are committed to delivering exceptional service that ensures customer satisfaction. Our mission is to simplify your life by offering reliable, efficient, and affordable services tailored to your unique requirements.
@@ -323,7 +323,7 @@ const HomePage = () => {
         <div>
           <div className='text-left grid grid-cols-1 lg:grid-cols-2 justify-center items-center py-5 px-5 gap-x-2 mt-10 overflow-hidden'>
             <div>
-              <h1 className='font-medium text-nowrap text-lg border-b-2 border-b-black border-dotted w-28 py-1'> Our Services </h1>
+              <h1 className='font-medium text-nowrap text-lg border-b-2 border-b-black border-dotted w-32 py-1'> Our Services </h1>
               <h3 className='font-bold text-2xl md:text-3xl py-4 text-[#DC143C] '>We Provide Awesome Services</h3>
               <p className='text-sm'>
                 We excel at delivering top notch, comprehensive solutions that exceed expectations. With our expertise, relentless work ethic, and unwavering commitment to precision, we masterfully handle every facet of your project, from solar installations and electrical work to plumbing and beyond.
@@ -531,7 +531,7 @@ const HomePage = () => {
       {/* contact */}
       <section className="max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-whiteText">
         <div>
-          <h1 className='text-3xl font-bold text-center py-5 hi'> Contact Us </h1>
+          <h1 className='text-3xl font-bold text-center py-5 hi text-nowrap'> Contact Us </h1>
           <div className='py-3'>
             <p className="text-center text-lg md:px-6 md:text-xl py-3">Transform your vision into stunning reality ! Let's collaborate and push the boundaries of creativity. Connect with us to start buiding outstanding projects</p>
             <hr className="w-36 h-2 md:h-3 bg-[orange] -rotate-2 mx-auto my-4" />
