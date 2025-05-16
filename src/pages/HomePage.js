@@ -267,9 +267,16 @@ const HomePage = () => {
       );
   };
 
+  const BlogArray = [
+    <div key="ElectricBlog">
+      <img src={ElectricWork} alt="ElectricImage" className="object-cover" />
+    </div>,
+  ]
+
   return (
     <div className='my-auto'>
       <Navbar />
+      
       <section className='max-w-screen-xl lg:my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-16 items-center justify-center bgcss' style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, objectFit: "cover" }}>
         <div className='flex items-center justify-between px-6 lg:px-20'>
           <Link><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer'/></Link>
@@ -611,7 +618,12 @@ const HomePage = () => {
             <img src={AboutDots} className='w-14 h-14 blur firstdots' alt="aboutDots" />
           </div>
           <div>
-            
+            <div className='w-full h-[400px] flex justify-center items-center transition-[.5s] relative overflow-y-auto'>
+                <div className='flex flex-col gap-y-5 blog-content'>
+                  {BlogArray}
+                  {BlogArray}
+                </div>
+              </div>
           </div>
         </div>
       </section>

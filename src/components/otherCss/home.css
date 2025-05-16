@@ -266,3 +266,25 @@
     background-color: green ;
     color: green ;
 }
+
+.blog-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+.service-content:nth-child(2) {
+    top: 600px;
+    animation-delay: 5s;
+}
