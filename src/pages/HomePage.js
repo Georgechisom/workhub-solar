@@ -364,7 +364,7 @@ const HomePage = () => {
             New Birth: Luxury Electrical Interiors
           </h2>
           <p className="text-sm py-3">
-            We have birthed new tentacles. Workhub are now into Electric Interior Design, to equipping your homes with our luxury interiors for perfect ...
+            Workhub are now into Electric Interior Design, to equipping your homes with our luxury interiors for perfect ...
           </p>
         </div>
         <div className='py-2 px-4 flex'>
