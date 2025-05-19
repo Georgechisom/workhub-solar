@@ -392,6 +392,7 @@ const HomePage = () => {
             <Link className='hover:font-bold hover:text-[#DC143C] cursor-pointer' to="/portfolio">Portfolio</Link>
             <Link className='hover:font-bold hover:text-[#DC143C] cursor-pointer' to="/service">Service</Link>
             <Link className='hover:font-bold hover:text-[#DC143C] cursor-pointer' to="/contact">Contact</Link>
+            <Link className='hover:font-bold hover:text-[#DC143C] cursor-pointer' to="/blog">Blog</Link>
           </div>
         </div>
         <div className='py-4 px-4 md:px-6 lg:px-20'>
