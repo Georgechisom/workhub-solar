@@ -8,8 +8,8 @@ const Tools = () => {
   return (
     <div>
         <div>
-            <a href={WhatsAppLink} target="_blank" rel='noopener noreferrer' className='relative overflow-hidden cursor-pointer bg-[#25D366] animate-pulse'>
-                <img src={WhatsApp} alt="whatsappImage" className='w-12 md:w-14 lg:w-16 z-50 rounded-full fixed bottom-10 right-5 duration-300 transition-all left-0 ml-auto' />
+            <a href={WhatsAppLink} target="_blank" rel='noopener noreferrer' className='relative overflow-hidden cursor-pointer bg-[#25D366] animate-pulse z-[9999]'>
+                <img src={WhatsApp} alt="whatsappImage" className='w-12 md:w-14 lg:w-16 z-[9999] rounded-full fixed bottom-10 right-5 duration-300 transition-all left-0 ml-auto' />
             </a>
         </div>
     </div>
