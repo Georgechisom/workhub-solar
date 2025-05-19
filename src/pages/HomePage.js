@@ -6,15 +6,15 @@ import BackgroundImage2 from "../images/our_plumbing_service.webp";
 import Logo from "../images/workhublogo.png";
 import { Link } from 'react-router-dom';
 import "../components/otherCss/home.css";
-import SolarIcon from '../images/about_solar_icon.png';
-import ElectricIcon from '../images/about_electric_icon.png';
-import InverterIcon from '../images/about_inverters.png';
 import AboutUs from '../images/services-people.jpeg';
 import AboutDots from '../images/six_dots.png';
 import DoAll from '../images/do_it_all.jpeg';
 import Arrow from '../images/down-arrow.png';
 import ElectricWork from '../images/electric_check.png';
 import emailjs from '@emailjs/browser';
+import SolarBlog from "../images/firstbg.webp"
+import Interiors from "../images/interiors.jpg"
+import Tools from '../components/utilities/Tools';
 
 
 const HomePage = () => {
@@ -269,7 +269,114 @@ const HomePage = () => {
 
   const BlogArray = [
     <div key="ElectricBlog">
-      <img src={ElectricWork} alt="ElectricImage" className="object-cover" />
+      <div className='border-2 border-black shadow-md shadow-black w-[250px] md:w-[300px] h-[450px] rounded-xl'>
+        <img src={ElectricWork} alt="ElectricImage" className="object-cover w-[250px] md:w-[300px] h-[200px] rounded-t-xl" />
+        <div className="px-4">
+          <h2 className="font-bold pt-3">
+            Lastest Smart Technology
+          </h2>
+          <p className="text-sm py-3">
+            We are delighted to show you new technology we used to beautify and upgrade our buidings into a smart homes for ...
+          </p>
+        </div>
+        <div className='py-2 px-4 flex'>
+          <Link to="/blog" className="py-2 px-6 mb-4 rounded-full border-b-2 border-r-2 border-black relative overflow-hidden font-semibold text-[black] text-center hover:shadow-lg hover:shadow-[red] hover:font-extrabold bg-[orange] mymover">
+            <span className="relative z-10 text-nowrap flex justify-center items-center">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </span>
+            <span className="absolute inset-0 z-0"></span>
+          </Link>
+        </div>
+      </div>
+    </div>,
+    <div key="SolarBlog">
+      <div className='border-2 border-black shadow-md shadow-black w-[250px] md:w-[300px] h-[450px] rounded-xl'>
+        <img src={SolarBlog} alt="SolarImage" className="object-cover w-[250px] md:w-[300px] h-[200px] rounded-t-xl" />
+        <div className="px-4">
+          <h2 className="font-bold pt-3">
+            New Methods of Solar Installations
+          </h2>
+          <p className="text-sm py-3">
+            New discovery have been found for a step by step installations of solar panels and it's connectivity ...
+          </p>
+        </div>
+        <div className='py-2 px-4 flex'>
+          <Link to="/blog" className="py-2 px-6 mb-4 rounded-full border-b-2 border-r-2 border-black relative overflow-hidden font-semibold text-[black] text-center hover:shadow-lg hover:shadow-[red] hover:font-bold bg-[orange] mymover">
+            <span className="relative z-10 text-nowrap flex justify-center items-center">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </span>
+            <span className="absolute inset-0 z-0"></span>
+          </Link>
+        </div>
+      </div>
+    </div>,
+    <div key="PlumbBlog">
+      <div className='border-2 border-black shadow-md shadow-black w-[250px] md:w-[300px] h-[450px] rounded-xl'>
+        <img src={BackgroundImage2} alt="PlumbImage" className="object-cover w-[250px] md:w-[300px] h-[200px] rounded-t-xl" />
+        <div className="px-4">
+          <h2 className="font-bold pt-3">
+            Amazing Plumbing Solutions
+          </h2>
+          <p className="text-sm py-3">
+            We have got unique ways of plumbing to transform your convinence into a smart luxuary rest room with our new ...
+          </p>
+        </div>
+        <div className='py-2 px-4 flex'>
+          <Link to="/blog" className="py-2 px-6 mb-4 rounded-full border-b-2 border-r-2 border-black relative overflow-hidden font-semibold text-[black] text-center hover:shadow-lg hover:shadow-[red] hover:font-extrabold bg-[orange] mymover">
+            <span className="relative z-10 text-nowrap flex justify-center items-center">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </span>
+            <span className="absolute inset-0 z-0"></span>
+          </Link>
+        </div>
+      </div>
+    </div>,
+    <div key="RecuitBlog">
+      <div className='border-2 border-black shadow-md shadow-black w-[250px] md:w-[300px] h-[450px] rounded-xl'>
+        <img src={AboutUs} alt="RecuitmentImage" className="object-cover w-[250px] md:w-[300px] h-[200px] rounded-t-xl" />
+        <div className="px-4">
+          <h2 className="font-bold pt-3">
+            Workhub Recuitment Begins
+          </h2>
+          <p className="text-sm py-3">
+            The office of the human resource is annoucing officially the recuitment of skilled personnels over ...
+          </p>
+        </div>
+        <div className='py-2 px-4 flex'>
+          <Link to="/blog" className="py-2 px-6 mb-4 rounded-full border-b-2 border-r-2 border-black relative overflow-hidden font-semibold text-[black] text-center hover:shadow-lg hover:shadow-[red] hover:font-extrabold bg-[orange] mymover">
+            <span className="relative z-10 text-nowrap flex justify-center items-center">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </span>
+            <span className="absolute inset-0 z-0"></span>
+          </Link>
+        </div>
+      </div>
+    </div>,
+    <div key="InteriorsBlog">
+      <div className='border-2 border-black shadow-md shadow-black w-[250px] md:w-[300px] h-[450px] rounded-xl'>
+        <img src={Interiors} alt="RecuitmentImage" className="object-cover w-[250px] md:w-[300px] h-[200px] rounded-t-xl" />
+        <div className="px-4">
+          <h2 className="font-bold pt-3">
+            New Birth: Luxury Electrical Interiors
+          </h2>
+          <p className="text-sm py-3">
+            We have birthed new tentacles. Workhub are now into Electric Interior Design, to equipping your homes with our luxury interiors for perfect ...
+          </p>
+        </div>
+        <div className='py-2 px-4 flex'>
+          <Link to="/blog" className="py-2 px-6 mb-4 rounded-full border-b-2 border-r-2 border-black relative overflow-hidden font-semibold text-[black] text-center hover:shadow-lg hover:shadow-[red] hover:font-extrabold bg-[orange] mymover">
+            <span className="relative z-10 text-nowrap flex justify-center items-center">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </span>
+            <span className="absolute inset-0 z-0"></span>
+          </Link>
+        </div>
+      </div>
     </div>,
   ]
 
@@ -302,6 +409,8 @@ const HomePage = () => {
         </div>
         {/* style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, backgroundSize: "cover", backgroundPosition: "center", height: "100vh" , width: "100vw", transition: "background-images 1s ease-in-out", }} */}
       </section>
+
+      <Tools />
 
       {/* about us */}
       <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
@@ -353,36 +462,6 @@ const HomePage = () => {
             </div>
           </div>
           <h1 className='text-lg md:text-3xl lg:text-4xl text-center w-full font-bold py-5'>YOUR SATISFACTION IS OUR <b className='text-[#DC143C] font-extrabold'>PRIORITY</b></h1>
-        </div>
-      </section>
-
-      {/* solar panels */}
-      <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
-        <h3>
-          We are dedicated to providing exceptional all-around service, leveraging our expertise, hard work, and meticulous attention to detail to handle every aspect of your needs, including solar installation, electrical work, plumbing, and more.
-        </h3>
-        <div className='flex flex-col md:flex-row lg:flex-row py-10 gap-y-8 md:gap-x-5 lg:gap-x-5'>
-          <div className='border-2 border-black rounded-lg shadow-md shadow-black py-4 px-4'>
-            <img src={SolarIcon} alt='solar_icon' className='w-9 object-cover mx-auto animate-bounce' />
-            <h3 className='text-center font-semibold text-xl my-4'>Efficient Solar Panels</h3>
-            <p>
-              Our solar panels deliver maximum efficiency ensuring you get the most out of every ray of sunshine
-            </p>
-          </div>
-          <div className='border-2 border-black rounded-lg shadow-md shadow-black py-4 px-4'>
-            <img src={ElectricIcon} alt='solar_icon' className='w-9 object-cover mx-auto animate-pulse' />
-            <h3 className='text-center font-semibold text-xl my-4'>Reliable Energy Storage</h3>
-            <p>
-              Our batteries store solar energy efficiently, ensuring uninterrupted power anytime.
-            </p>
-          </div>
-          <div className='border-2 border-black rounded-lg shadow-md shadow-black py-4 px-4'>
-            <img src={InverterIcon} alt='solar_icon' className='w-9 object-cover mx-auto animate-pulse' />
-            <h3 className='text-center font-semibold text-xl my-4'>Smart Inverter Tech</h3>
-            <p>
-              Optimize energy use with intelligent inverters that efficiently convert and regulate solar power.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -613,13 +692,14 @@ const HomePage = () => {
               Our Blog
             </h1>
             <hr className="w-36 h-2 md:h-3 bg-[orange] -rotate-2 mx-auto my-4" />
-            <h3 className='font-medium text-base py-4 text-black'>Discover lastest Insights, Stay ahead of the curve with our lastest news, trends and analysis. Get informed, get experience that inspire and educate.
+            <h3 className='font-medium text-base py-4 text-black'>
+              Discover lastest Insights, Stay ahead of the curve with our lastest news, trends and analysis. Get informed, get connected with us as we give you new informations on our products and services.
             </h3>
             <img src={AboutDots} className='w-14 h-14 blur firstdots' alt="aboutDots" />
           </div>
           <div>
-            <div className='w-full h-[400px] flex justify-center items-center transition-[.5s] relative overflow-y-auto'>
-                <div className='flex flex-col gap-y-5 blog-content'>
+            <div className='w-full h-[500px] flex justify-center items-center transition-[.5s] relative overflow-x-scroll '>
+                <div className='flex flex-row gap-x-5 blog-content'>
                   {BlogArray}
                   {BlogArray}
                 </div>

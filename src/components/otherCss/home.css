@@ -272,7 +272,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    animation: scrollLeft 15s linear infinite;
+    animation: scrollLeft 20s linear infinite;
 }
 
 @keyframes scrollLeft {
@@ -285,6 +285,10 @@
 }
 
 .service-content:nth-child(2) {
-    top: 600px;
+    left: 600px;
     animation-delay: 5s;
+}
+
+.blog-content:hover {
+    animation: none;
 }

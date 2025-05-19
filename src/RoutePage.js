@@ -5,6 +5,7 @@ import Service from "./pages/Service.js";
 import Portfolio from "./pages/Portfolio.js";
 import Contact from "./pages/Contact.js";
 import NotFound from "./pages/NotFoundPage.js";
+import Blog from './pages/Blog.js';
 
 const RoutePage = () => {
   return (
@@ -15,6 +16,7 @@ const RoutePage = () => {
           <Route path='/Service' element={<Service />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact'  element={<Contact />} />
+          <Route path='/blog'  element={<Blog />} />
           <Route element={<NotFound />} />
         </Routes>
     </BrowserRouter>
