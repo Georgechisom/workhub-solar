@@ -70,6 +70,7 @@ const Navbar = () => {
                   <Link className='hover:italic hover:font-bold' to="/portfolio">Portfolio</Link>
                   <Link className='hover:italic hover:font-bold' to="/service">Service</Link>
                   <Link className='hover:italic hover:font-bold' to="/contact">Contact</Link>
+                  <Link className='hover:italic hover:font-bold' to="/blog">Blog</Link>
                 </div>
             </div>
         </div>
