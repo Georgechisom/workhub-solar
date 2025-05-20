@@ -15,6 +15,7 @@ import emailjs from '@emailjs/browser';
 import SolarBlog from "../images/firstbg.webp"
 import Interiors from "../images/interiors.jpg"
 import Tools from '../components/utilities/Tools';
+import Footer from '../components/Footer/Footer';
 
 
 const HomePage = () => {
@@ -709,6 +710,9 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* footer */}
+      <Footer />
+      
     </div>
   )
 };

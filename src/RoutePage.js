@@ -13,7 +13,7 @@ const RoutePage = () => {
         <Routes>
           {/* <Route path='/' > <Redirect to="" /> </Route> */}
           <Route path='/' element={<Home />} exact/>
-          <Route path='/Service' element={<Service />} />
+          <Route path='/service' element={<Service />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact'  element={<Contact />} />
           <Route path='/blog'  element={<Blog />} />
