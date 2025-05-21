@@ -50,11 +50,11 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-4 content-center justify-evenly items-center gap-x-6 gap-y-6'>
-                <Link to="/" >
+            <div className='grid grid-cols-2 md:grid-cols-4 justify-center items-center content-center gap-6 mx-auto'>
+                <Link to="/" className='mx-auto'>
                     <img src={Logo} alt='logo' className='object-cover w-32 md:w-52 cursor-pointer'/>
                 </Link>
-                <div className='flex flex-col justify-center items-start w-full py-4 '>
+                <div className='flex flex-col justify-center items-center w-full py-4'>
                     <h3 className="font-bold py-3 text-base">Navigations</h3>
                     <div className='flex flex-col justify-center items-start gap-2 text-sm md:text-base'>
                         <Link to="/" className='hover:italic hover:font-semibold'>
@@ -68,7 +68,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-start w-full py-4 '>
+                <div className='flex flex-col justify-center items-center w-full py-4'>
                     <h3 className="font-bold py-3 text-left text-base">Our Services</h3>
                     <div className='flex flex-col justify-center items-start gap-2 text-sm md:text-base'>
                         <Link to="/service" className='hover:italic hover:font-semibold'>
@@ -82,7 +82,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-start w-full py-4 '>
+                <div className='flex flex-col justify-center items-center w-full py-4'>
                     <h3 className="font-bold py-3 text-left text-base">Regulations</h3>
                     <div className='flex flex-col justify-center items-start gap-2 text-sm md:text-base'>
                         <button onClick={openTerms} className='hover:italic hover:font-semibold'>
