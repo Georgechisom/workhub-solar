@@ -152,7 +152,7 @@ const Footer = () => {
                             </button>
                             <div className='bg-white overflow-hidden px-5 md:px-20 py-5 md:py-20 ml-5 mr-5 md:ml-20 md:mr-20  rounded-lg '>
                                 <h1 className='w-full text-center my-6 font-bold'>Workhub Private Policy</h1>
-                                <p>
+                                <div>
                                     Workhub Service operates website including https://workhub-solar.vercel.app It is Workhub Service's policy to respect your privacy regarding any information Workhub Service may collect while operating its websites as Workhub Service takes the protection of your data seriously in all of its processing. <br/> <br/>
 
                                     
@@ -275,7 +275,7 @@ const Footer = () => {
                                     <span className="text-lg mt-2 mb-2 font-bold" style={{ color: "red", }}> Contact </span> <br />
 
                                     If you need further assistance, contact us via our email info@workhub.com or by visiting Workhub Service’s website and clicking on our website to submit your inquiry. <br /> <br />
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
