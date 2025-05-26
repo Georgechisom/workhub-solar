@@ -434,7 +434,7 @@ const HomePage = () => {
         </div>
       </section> */}
 
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-[700px] md:h-[1000px] overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcss' style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, objectFit: "cover", backgroundColor: `url('${slideData[currentIndex].backgroundColor}')` }}>
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-[700px] md:h-[800px] lg:h-[900px] overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcss' style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, objectFit: "cover", backgroundColor: `url('${slideData[currentIndex].backgroundColor}')` }}>
         <div className=''>
           <div className='flex items-center justify-between px-6 lg:px-20'>
             <Link to="/"><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer'/></Link>
@@ -452,7 +452,7 @@ const HomePage = () => {
               <span className="absolute inset-0 z-0"></span>
             </span>
             <div className='flex flex-col lg:flex-row lg:items-end'>
-              <p className='font-bold lg:font-extrabold text-2xl md:text-4xl lg:text-6xl py-8 md:py-10 lg:py-16' style={slideData[currentIndex].style}>
+              <p className='text-white font-bold lg:font-extrabold text-2xl md:text-4xl lg:text-6xl py-8 md:py-10 lg:py-16'>
                 {slideData[currentIndex].caption}
               </p>
               <div className='italic hidden  md:grid grid-cols-1 py-4 md:py-10 lg:py-8 font-semibold text-white w-full'>

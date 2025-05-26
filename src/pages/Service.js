@@ -14,7 +14,7 @@ const Service = () => {
     <div>
       <Navbar />
             
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-[700px] md:h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
         <div className=''>
           <div className='flex items-center justify-between px-6 lg:px-20'>
             <Link to="/"><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer'/></Link>

@@ -4,6 +4,7 @@
     background-size: cover;
     perspective-origin: 50% 50%;
     background-blend-mode: darken;
+    background-color: "rgba(117, 43, 5, 0.3)",
 }
 
 @keyframes upDpwn {
