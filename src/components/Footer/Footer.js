@@ -5,6 +5,7 @@ import Facebook from "../../images/facebook.png";
 import Instagram from "../../images/instagram.png";
 import Twitter from "../../images/twitter3.png";
 import YouTube from "../../images/youtube.png";
+import BackgroundImage from "../../images/officeWorkhubDesk.JPG";
 
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer className='relative'>
-        <section className='mt-10 mx-auto w-full overflow-hidden py-10 px-6 lg:px-20 bg-backgroundText'>
+        <section className='max-w-screen-xl mt-10 mx-auto w-full overflow-hidden py-10 px-6 lg:px-20 footerbg' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
             <div className='my-10'>
                 <div className="text-black font-semibold text-center">
                     Experience seamless and secure solar installations nationwide with Workhub. paired with innovative services by experts to transform your building into a smart, sustainable home.

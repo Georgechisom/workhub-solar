@@ -34,12 +34,6 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    .bgcssa{
-        animation: leftToRight 100s linear infinite;
-    }
-}
-
 .bgspecial{
     color: orange;
     width: 150px;
@@ -124,7 +118,7 @@
 .bgcsstwo{
     width: 100%;
     height: 100%;
-    animation: upDownAndBack 25s linear infinite;
+    animation: upDownAndBack 50s linear infinite;
     perspective: 1000px;
     background-size: cover;
     perspective-origin: 50% 50%;
@@ -140,4 +134,26 @@
 
 .mybttnseff2:hover {
     background-color: white;
+}
+
+@keyframes leftToRights {
+    0% {
+        background-position: 0% 0px;
+    }
+    50% {
+        background-position: 100% 0px;
+    }
+    100% {
+        background-position: 0% 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bgcssa{
+        animation: leftToRight 100s linear infinite;
+    }
+
+    .bgcsstwo{
+        animation: leftToRights 50s linear infinite;
+    }
 }
