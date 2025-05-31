@@ -4,7 +4,12 @@ import BackgroundImage from "../images/services_bg.jpeg";
 import { Link } from 'react-router-dom';
 import Logo from "../images/workhublogo.png";
 import "../components/otherCss/service.css";
-import ServiceRobot from "../images/service_img_rem.png"
+import ServiceRobot from "../images/service_img_rem.png";
+import Experts from "../images/skilledTwoMen.JPG";
+import SolarVideo from "../videos/solarVideo.mp4";
+import SomeStaff from "../images/staff_working.jpeg";
+import Battery from "../images/battery.JPG";
+import SecondBackgroundImage from "../images/service_advance_bg.jpeg";
 
 
 
@@ -14,7 +19,7 @@ const Service = () => {
     <div>
       <Navbar />
             
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-[700px] md:h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
         <div className=''>
           <div className='flex items-center justify-between px-6 lg:px-20'>
             <Link to="/"><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer'/></Link>
@@ -49,6 +54,7 @@ const Service = () => {
         </div>
       </section >
 
+      {/* our services */}
       <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
         <div>
           <div className='text-center py-5 w-full'>
@@ -63,9 +69,9 @@ const Service = () => {
             <div className='w-full h-full lg:w-[990px] l mx-auto py-3 px-3'>
               <img src={ServiceRobot} alt='service_image' className='object-cover mx-auto lg:mx-0 h-auto lg:h-[500px]' />
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-4 gap-y-8 md:gap-y-4'>
 
-              <div className='w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 bg-white'>
+              <div className='w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
                 
                 <div className='font-bold text-xl text-[#DC143C] py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path></svg>
@@ -80,7 +86,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 text-white servicedivbg'>
+              <div className='w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
                 
                 <div className='font-bold text-[orange] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" height="28" width="28" className='animate-pulse' xmlns="http://www.w3.org/2000/svg"><path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path></svg>
@@ -95,7 +101,7 @@ const Service = () => {
                 </Link>
               </div>
               
-              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 text-white servicedivbg'>
+              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
                 <div className='font-bold text-[orange] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"></path></svg>
                   Plumbing Services
@@ -109,7 +115,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='block md:hidden lg:hidden w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 text-white bg-white'>
+              <div className='block md:hidden lg:hidden w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white bg-white'>
                 <div className='font-bold text-[#DC143C] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"></path></svg>
                   Plumbing Services
@@ -123,7 +129,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 bg-white'>
+              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
                 
                 <div className='font-bold text-xl text-[#DC143C] py-4 flex items-center gap-x-4'>
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" stroke="currentColor" fill="currentColor" strokeWidth="0" className='animate-pulse' viewBox="0 0 50 50">
@@ -160,6 +166,94 @@ const Service = () => {
           </div>
         </div>
       </section>
+
+      {/* our experts */}
+      <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-whiteText'>
+        <div className='grid justify-center items-center grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-5 py-10 md:py-16 px-1 md:px-5'>
+         <div className='block items-start'>
+            <div className='text-[#f3a61a]'>TRUSTED EXPERTS</div>
+            <h2 className='my-4 text-xl font-bold'>
+              Skilled technicians delivering high quality and excellent service.
+            </h2>
+            <img src={Experts} alt="technicians" className='object-cover w-[400px] h-[300px] rounded-xl hover:shadow-md hover:shadow-black' />
+         </div>
+         <div className="mx-auto rounded-xl">
+          <video autoPlay loop controls width={400} height={150} className="rounded-xl vishadow hover:shadow-lg hover:shadow-black">
+            <source src={SolarVideo} type="video/mp4" />
+            Download the <a href={SolarVideo}>MP4</a> video.
+          </video>
+         </div>
+         <div className='block items-end text-left md:text-right'>
+            <img src={SomeStaff} alt="technicians" className='object-cover w-[400px] h-[300px] rounded-xl ml-0 md:ml-auto hover:shadow-md hover:shadow-black' />
+            <div className='text-xl font-bold my-3'>
+              Customer Satisfaction, Reliability and Affordability
+            </div>
+            <h2 className='font-normal text-gray-400'>
+              We prioritize your comfort, convenience and quality service at competitive prices
+            </h2>
+         </div>
+        </div>
+      </section>
+
+      {/* why choose us */}
+      <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:py-20 lg:px-20 items-center justify-center bg-backgroundText'>
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-5 gap-5">
+          <div className='h-full rounded-xl'>
+            <img src={Battery} alt="battery_image" className='object-cover rounded-xl mx-auto lg:w-full lg:h-full md:w-[400px] md:h-[400px] w-full h-full' />
+          </div>
+          <div  className='h-full'>
+            <div className='block items-start h-full'>
+              <div className='text-[#DC143C] mt-7 md:py-1'>Why Choose Us?</div>
+              <h2 className='my-4 text-xl font-bold'>
+                  We deliver exceptional sevices for homes and businesses, setting the standard for excellence in every project we undertake.
+              </h2>
+              <div className='grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-5 my-5 py-5'>
+                <div className='px-4 py-6 h-48 md:h-52 vishadow bg-white'>
+                  <div className='my-3 font-semibold text-lg'>Renewable Energy Solutions</div>
+                  <div>Sustainable and cost effective solar systems.</div>
+                </div>
+                <div className='px-4 py-6 h-48 md:h-52 vishadow bg-white'>
+                  <div className='my-3 font-semibold text-lg'>Expert Electrical Work</div>
+                  <div>From minor fixes to complete installations.</div>
+                </div>
+                <div className='px-4 py-6 h-48 md:h-52 vishadow bg-white'>
+                  <div className='my-3 font-semibold text-lg'>
+                    Plumbing You Can Rely On
+                  </div>
+                  <div>Quick, clean, and professional service.</div>
+                </div>
+                <div className='px-4 py-6 h-48 md:h-52 vishadow bg-white'>
+                  <div className='my-3 font-semibold text-lg'>
+                    24/7 Support & Emergency Services
+                  </div>
+                  <div> We're here when you need us. </div>
+                </div>
+              </div>
+              <div className="my-10">
+                <Link to="/contact" className='rounded-full bg-[orange] py-4 font-bold cursor-pointer hover:italic flex text-nowrap justify-center items-center gap-x-1 hover:bg-white hover:text-[black] hover:border-b-2 hover:border-r-2 hover:border-[black] hover:gap-x-4 text-[black] mybttnseff vishadow'>
+                  Get In Touch
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcsstwo' style={{ backgroundImage: `url('${SecondBackgroundImage}')`, objectFit: "cover", }}>
+        <div className="py-40 text-center text-white">
+          <div className='font-semibold py-5'>
+            Ready to Upgrade Your Home or Business ?
+          </div>
+          <div className=" mx-auto py-1 border-2 border-white w-[300px] rounded-full px-1 overflow-hidden">
+            <Link to="/contact" className='rounded-full bg-[orange] py-4 font-bold cursor-pointer hover:italic flex text-nowrap justify-center items-center gap-x-1 hover:bg-white hover:text-[black] hover:border-b-2 hover:gap-x-4 text-[black] mybttnseff2'>
+              Get Started Today
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
