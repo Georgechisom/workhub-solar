@@ -6,6 +6,7 @@ import Instagram from "../../images/instagram.png";
 import Twitter from "../../images/twitter3.png";
 import YouTube from "../../images/youtube.png";
 import BackgroundImage from "../../images/officeWorkhubDesk.JPG";
+import "../Footer/Footer.css";
 
 
 const Footer = () => {
@@ -31,9 +32,9 @@ const Footer = () => {
 
   return (
     <footer className='relative'>
-        <section className='max-w-screen-xl mt-10 mx-auto w-full overflow-hidden py-10 px-6 lg:px-20 footerbg' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
+        <div className='max-w-screen-xl mt-10 mx-auto w-full h-full overflow-hidden py-10 px-4 lg:px-20 footerbg text-white' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
             <div className='my-10'>
-                <div className="text-black font-semibold text-center">
+                <div className="font-semibold text-center">
                     Experience seamless and secure solar installations nationwide with Workhub. paired with innovative services by experts to transform your building into a smart, sustainable home.
                 </div>
                 <div className='flex flex-row items-center justify-center flex-nowrap mt-6'>
@@ -53,7 +54,7 @@ const Footer = () => {
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 justify-center items-center content-center gap-6 mx-auto'>
                 <Link to="/" className='mx-auto'>
-                    <img src={Logo} alt='logo' className='object-cover w-32 md:w-52 cursor-pointer'/>
+                    <img src={Logo} alt='logo' className='object-cover w-32 md:w-52 cursor-pointer invert'/>
                 </Link>
                 <div className='flex flex-col justify-center items-center w-full py-4'>
                     <h3 className="font-bold py-3 text-base">Navigations</h3>
@@ -282,10 +283,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-screen-xl mx-auto w-full overflow-hidden flex items-center justify-center text-center mt-8 font-semibold text-xs sm:text-sm md:text-base lg:text-lg text-nowrap'>
+            <div className='mx-auto w-full overflow-hidden flex items-center justify-center text-center mt-8 font-semibold text-xs sm:text-sm md:text-base lg:text-lg text-nowrap'>
                 &#169; 2025 Workhub Services. All Rights Reserved.
             </div>
-        </section>
+        </div>
     </footer>
   );
 }

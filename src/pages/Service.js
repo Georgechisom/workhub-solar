@@ -10,6 +10,8 @@ import SolarVideo from "../videos/solarVideo.mp4";
 import SomeStaff from "../images/staff_working.jpeg";
 import Battery from "../images/battery.JPG";
 import SecondBackgroundImage from "../images/service_advance_bg.jpeg";
+import Tools from '../components/utilities/Tools';
+import Footer from '../components/Footer/Footer';
 
 
 
@@ -53,6 +55,8 @@ const Service = () => {
           {/* style={{ backgroundImage: `url('${slideData[currentIndex].url}')`, backgroundSize: "cover", backgroundPosition: "center", height: "100vh" , width: "100vw", transition: "background-images 1s ease-in-out", }} */}
         </div>
       </section >
+
+      <Tools />
 
       {/* our services */}
       <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:px-20 items-center justify-center bg-backgroundText'>
@@ -195,6 +199,21 @@ const Service = () => {
         </div>
       </section>
 
+      {/* get started */}
+      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcsstwo' style={{ backgroundImage: `url('${SecondBackgroundImage}')`, objectFit: "cover", }}>
+        <div className="py-40 md:px-10 text-center">
+          <div className='font-semibold py-5 text-lg text-white'>
+            Ready to Upgrade Your Home or Business ?
+          </div>
+          <div className=" mx-auto py-1 border-2 border-white w-[250px] md:w-[300px] rounded-full px-1 overflow-hidden">
+            <Link to="/contact" className='rounded-full bg-[orange] py-4 font-bold cursor-pointer hover:italic flex text-nowrap justify-center items-center gap-x-1 hover:bg-white hover:text-[black] hover:border-b-2 hover:gap-x-4 text-[black] mybttnseff2'>
+              Get Started Today
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* why choose us */}
       <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:py-20 lg:px-20 items-center justify-center bg-backgroundText'>
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-5 gap-5">
@@ -240,19 +259,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcsstwo' style={{ backgroundImage: `url('${SecondBackgroundImage}')`, objectFit: "cover", }}>
-        <div className="py-40 md:px-10 text-center">
-          <div className='font-semibold py-5 text-lg text-white'>
-            Ready to Upgrade Your Home or Business ?
-          </div>
-          <div className=" mx-auto py-1 border-2 border-white w-[250px] md:w-[300px] rounded-full px-1 overflow-hidden">
-            <Link to="/contact" className='rounded-full bg-[orange] py-4 font-bold cursor-pointer hover:italic flex text-nowrap justify-center items-center gap-x-1 hover:bg-white hover:text-[black] hover:border-b-2 hover:gap-x-4 text-[black] mybttnseff2'>
-              Get Started Today
-              <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555" className='animate-pulse mx-2'><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <Footer />
 
     </div>
   )
