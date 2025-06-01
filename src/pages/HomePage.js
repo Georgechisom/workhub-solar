@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import BackgroundImage from "../images/solarlongpanels.JPG";
 import BackgroundImage1 from "../images/interiors.jpg";
-import BackgroundImage2 from "../images/our_plumbing_service.webp";
+import BackgroundImage2 from "../images/plum_Gmen.JPG";
 import Logo from "../images/workhublogo.png";
 import { Link } from 'react-router-dom';
 import "../components/otherCss/home.css";
@@ -451,8 +451,8 @@ const HomePage = () => {
               </p>
               <img src={AboutDots} className='w-14 blur firstdots' alt="aboutDots" />
             </div>
-            <div className='tryFirst w-[180px] h-[180px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] md:mx-auto bg-[#ffa500] -mt-10 md:mt-5 lg:mt-10'>
-              <img src={AboutUs} className='tryborder ml-[20px] md:ml-[50px] mt-10 md:mt-0' alt="aboutImage" />
+            <div className='tryFirst w-[180px] h-[180px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] mx-auto bg-[#ffa500] -mt-10 md:mt-5 lg:mt-10 z-10'>
+              <img src={AboutUs} className='tryborder -ml-[70px] md:ml-[50px] mt-10 md:mt-0' alt="aboutImage" />
             </div>
           </div>
         </div>
@@ -499,7 +499,7 @@ const HomePage = () => {
           <div className='py-5'>
             
             <div className='grid grid-cols-1 md:hidden lg:hidden gap-5 md:gap-x-10 content-center justify-center items-center'>
-              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300" : expandDiv === 1 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(1)} onClick={() => handleDivClick(1)}>
+              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300 mx-auto" : expandDiv === 1 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300 mx-auto" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300 mx-auto"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(1)} onClick={() => handleDivClick(1)}>
                 <div className='w-full h-full absolute top-0 left-o right-0 bottom-0'>
                   <img src={BackgroundImage} alt='portofolio1' className='w-full h-full object-cover'/>
                 </div>
@@ -515,7 +515,7 @@ const HomePage = () => {
                   <div className='flex justify-between align-middle'></div>
                 </div>
               </div>
-              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300" : expandDiv === 2 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(2)} onClick={() => handleDivClick(2)}>
+              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300 mx-auto" : expandDiv === 2 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300 mx-auto" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300 mx-auto"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(2)} onClick={() => handleDivClick(2)}>
                 <div className='w-full h-full absolute top-0 left-o right-0 bottom-0'>
                   <img src={ElectricWork} alt='portofolio1' className='w-full h-full object-cover'/>
                 </div>
@@ -530,7 +530,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300" : expandDiv === 3 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(3)} onClick={() => handleDivClick(3)}>
+              <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300 mx-auto" : expandDiv === 3 ? "relative overflow-hidden h-[300px] w-[280px] rounded-2xl transition-all duration-300 mx-auto" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300 mx-auto"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(3)} onClick={() => handleDivClick(3)}>
                 <div className='w-full h-full absolute top-0 left-o right-0 bottom-0'>
                   <img src={BackgroundImage2} alt='portofolio1' className='w-full h-full object-cover'/>
                 </div>
@@ -549,7 +549,7 @@ const HomePage = () => {
             <div className='hidden md:flex flex-row gap-5 md:gap-x-10 content-center justify-center items-center'>
               <div className={expandDiv === null ? "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300" : expandDiv === 2 ? "relative overflow-hidden h-[300px] w-[300px] rounded-2xl transition-all duration-300" : "relative overflow-hidden h-[300px] w-[150px] rounded-2xl transition-all duration-300"} onMouseOver={() => !window.matchMedia("(pointer: coarse)").matches && setExpandDiv(2)} onClick={() => handleDivClick(2)}>
                 <div className='w-full h-full absolute top-0 left-o right-0 bottom-0'>
-                  <img src={ElectricWork} alt='portofolio1' className='w-full h-full object-cover'/>
+                  <img src={ElectricWork} alt='portofolio1' className='w-full h-full object-cover mx-auto'/>
                 </div>
                 <div className={expandDiv === null ? "relative fira px-4 py-4 text-nowrap w-[150%] mt-28 -ml-12 rotate-90 transition-all duration-300 box-content" : expandDiv === 2 ? "relative fira px-4 py-4 mt-52 text-nowrap" : "relative fira px-4 py-4 text-nowrap w-[150%] mt-28 -ml-12 rotate-90 transition-all duration-300 box-content"}>
                   <div className="flex justify-start gap-x-4 items-center">

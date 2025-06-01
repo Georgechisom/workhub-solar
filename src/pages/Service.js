@@ -182,7 +182,7 @@ const Service = () => {
             <img src={Experts} alt="technicians" className='object-cover w-[400px] h-[300px] rounded-xl hover:shadow-md hover:shadow-black' />
          </div>
          <div className="mx-auto rounded-xl">
-          <video autoPlay loop controls width={400} height={150} className="rounded-xl vishadow hover:shadow-lg hover:shadow-black">
+          <video autoPlay loop muted controls width={400} height={150} className="rounded-xl vishadow hover:shadow-lg hover:shadow-black">
             <source src={SolarVideo} type="video/mp4" />
             Download the <a href={SolarVideo}>MP4</a> video.
           </video>
@@ -218,7 +218,7 @@ const Service = () => {
       <section className='max-w-screen-xl my-10 mx-auto w-full overflow-hidden lg:rounded-2xl py-6 px-6 lg:py-20 lg:px-20 items-center justify-center bg-backgroundText'>
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center py-5 gap-5">
           <div className='h-full rounded-xl'>
-            <img src={Battery} alt="battery_image" className='object-cover rounded-xl mx-auto lg:w-full lg:h-full md:w-[400px] md:h-[400px] w-full h-full' />
+            <img src={Battery} alt="battery_image" className='object-cover rounded-xl mx-auto lg:w-full lg:h-full w-[400px] h-[400px]' />
           </div>
           <div  className='h-full'>
             <div className='block items-start h-full'>

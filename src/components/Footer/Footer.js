@@ -35,7 +35,7 @@ const Footer = () => {
         <div className='max-w-screen-xl mt-10 mx-auto w-full h-full overflow-hidden py-10 px-4 lg:px-20 footerbg text-white' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
             <div className='my-10'>
                 <div className="font-semibold text-center">
-                    Experience seamless and secure solar installations nationwide with Workhub. paired with innovative services by experts to transform your building into a smart, sustainable home.
+                    Experience seamless and secure solar installations nationwide with Workhub. paired with other innovative services by experts to transform your building into a smart, sustainable home.
                 </div>
                 <div className='flex flex-row items-center justify-center flex-nowrap mt-6'>
                     <Link className='px-3 md:px-5'>
