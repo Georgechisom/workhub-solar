@@ -12,8 +12,8 @@ import DoAll from '../images/do_it_all.jpeg';
 import Arrow from '../images/down-arrow.png';
 import ElectricWork from '../images/electric_check.png';
 import emailjs from '@emailjs/browser';
-import SolarBlog from "../images/firstbg.webp"
-import Interiors from "../images/interiors.jpg"
+import SolarBlog from "../images/firstbg.webp";
+import Interiors from "../images/interiors.jpg";
 import Tools from '../components/utilities/Tools';
 import Footer from '../components/Footer/Footer';
 

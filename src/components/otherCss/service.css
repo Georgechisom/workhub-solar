@@ -35,9 +35,9 @@
 }
 
 .bgspecial{
-    color: orange;
+    color: #DC143C;
     width: 150px;
-    text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+    /* text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px; */
     backdrop-filter: blur(10px);
     font-weight: 900;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
