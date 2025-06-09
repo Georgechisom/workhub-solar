@@ -21,8 +21,8 @@ const Service = () => {
     <div>
       <Navbar />
             
-      <section className='max-w-screen-xl lg:my-10 mx-auto w-full h-full overflow-hidden lg:rounded-2xl py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
-        <div className='pt-10 md:pt-0'>
+      <section className='mx-auto w-full h-[800px] md:h-[800px] lg:h-[900px] overflow-hidden py-16 md:py-10 items-center justify-center bgcssa' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
+        <div className='py-10 md:pt-0'>
           <div className='flex items-center justify-between px-6 lg:px-20'>
             <Link to="/"><img src={Logo} alt='Logo' className='w-28 md:w-32 lg:w-32 mt-2 mb-2 object-cover cursor-pointer invert md:filter-none'/></Link>
             <div className='flex flex-col text-white gap-y-2 md:gap-y-3 lg:gap-y-4 py-8'>
@@ -75,7 +75,7 @@ const Service = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-4 gap-y-8 md:gap-y-4'>
 
-              <div className='w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
+              <div className='w-full h-64 md:h-72 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
                 
                 <div className='font-bold text-xl text-[#DC143C] py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path></svg>
@@ -90,7 +90,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
+              <div className='w-full h-64 md:h-72 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
                 
                 <div className='font-bold text-[orange] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" height="28" width="28" className='animate-pulse' xmlns="http://www.w3.org/2000/svg"><path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path></svg>
@@ -105,7 +105,7 @@ const Service = () => {
                 </Link>
               </div>
               
-              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
+              <div className='hidden md:block w-full h-64 md:h-72 overflow-hidden rounded-md vishadow py-8 px-5 text-white servicedivbg'>
                 <div className='font-bold text-[orange] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"></path></svg>
                   Plumbing Services
@@ -119,7 +119,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='block md:hidden lg:hidden w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 text-white bg-white'>
+              <div className='block md:hidden lg:hidden w-full h-64 md:h-72 overflow-hidden rounded-md vishadow py-8 px-5 text-white bg-white'>
                 <div className='font-bold text-[#DC143C] text-xl py-4 flex items-center gap-x-4'>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" className="animate-pulse" height="28" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"></path></svg>
                   Plumbing Services
@@ -133,7 +133,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='hidden md:block w-full h-64 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
+              <div className='hidden md:block w-full h-64 md:h-72 overflow-hidden rounded-md vishadow py-8 px-5 bg-white'>
                 
                 <div className='font-bold text-xl text-[#DC143C] py-4 flex items-center gap-x-4'>
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" stroke="currentColor" fill="currentColor" strokeWidth="0" className='animate-pulse' viewBox="0 0 50 50">
@@ -150,7 +150,7 @@ const Service = () => {
                 </Link>
               </div>
 
-              <div className='block md:hidden lg:hidden w-full h-64 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 servicedivbg'>
+              <div className='block md:hidden lg:hidden w-full h-64 md:h-72 overflow-hidden rounded-md shadow-lg shadow-black py-8 px-5 servicedivbg'>
                 
                 <div className='font-bold text-xl text-[orange] py-4 flex items-center gap-x-4'>
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" stroke="currentColor" fill="currentColor" strokeWidth="0" className='animate-pulse' viewBox="0 0 50 50">

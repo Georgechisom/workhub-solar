@@ -40,7 +40,7 @@ const Navbar = () => {
 
     return (
       <nav className={scrollWork ? 'navbar w-full fixed lg:sticky md:sticky sm:sticky sm:left-0 sm:right-0 top-0 sm:top-0 md:top-0 z-50 text-[#DC143C] duration-200 transition-all' : 'hidden bg-backgroundText'}>
-        <div className='max-w-screen-xl mx-auto h-20 md:h-24 lg:h-28 flex items-center justify-between md:justify-center px-4 lg:px-0'>
+        <div className='max-w-screen-xl mx-auto h-20 md:py-16 md:h-24 lg:h-28 flex items-center justify-between md:justify-center px-4 lg:px-0'>
             <Link to="/" className='inline-flex md:hidden'>
               <img src={Logo} alt='logo' className='w-20 object-cover md:-ml-0'/>
             </Link>

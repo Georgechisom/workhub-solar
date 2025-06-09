@@ -1,5 +1,5 @@
 .bgcss{
-    animation: upDownAndBack 10s linear infinite;
+    animation: upDownAndBack 15s linear infinite;
     perspective: 1000px;
     background-size: cover;
     background-position: 100% 100%;

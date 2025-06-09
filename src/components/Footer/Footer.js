@@ -32,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer className='relative'>
-        <div className='max-w-screen-xl mt-10 mx-auto w-full h-full overflow-hidden py-10 px-4 lg:px-20 footerbg text-white' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
+        <div className='max-w-screen-xl mt-10 mx-auto w-full h-full overflow-hidden py-14 md:py-20 px-4 lg:px-20 footerbg text-white' style={{ backgroundImage: `url('${BackgroundImage}')`, objectFit: "cover", }}>
             <div className='my-10'>
                 <div className="font-semibold text-center">
                     Experience seamless and secure solar installations nationwide with Workhub. paired with other innovative services by experts to transform your building into a smart, sustainable home.
