@@ -25,6 +25,7 @@ import AllStaff from "../images/staff_working.jpeg";
 import PlumbTool from "../images/plumShop1.jpeg";
 import PlumbTools from "../images/plumShop2.jpeg";
 import PlumbToolss from "../images/plumShop3.jpeg";
+import NewWorkhub from "../images/white_workhub.JPG";
 
 
 
@@ -179,7 +180,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className={showMyExhibition ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 items-center justify-center content-center" : "hidden"}>
-            <div className='lg:col-start-1 lg:col-span-3'>
+            <div className='lg:col-start-1'>
               <img src={HandPlumb} alt="electricImage" className='object-cover h-[300px] lg:h-[400px] w-full rounded-lg' />
             </div>
             <div className='lg:col-span-2'>
@@ -202,6 +203,16 @@ const Portfolio = () => {
             <div className={ showExhibition ? "cursor-pointer hover:italic hover:font-medium text-[#DC143C] border-b-2 border-[#DC143C] pb-1 w-24 text-center text-nowrap" : "cursor-pointer hover:italic hover:font-medium text-black text-center text-nowrap"} onClick={solarDisplay}>Exhibition 1</div>
             <div className={ showExhibitions ? "cursor-pointer hover:italic hover:font-medium text-[#DC143C] border-b-2 border-[#DC143C] pb-1 w-24 text-center text-nowrap" : "cursor-pointer hover:italic hover:font-medium text-black text-center text-nowrap"} onClick={solarDisplaySecond}>Exhibition 2</div>
             <div className={ showMyExhibition ? "cursor-pointer hover:italic hover:font-medium text-[#DC143C] border-b-2 border-[#DC143C] pb-1 w-24 text-center text-nowrap" : "cursor-pointer hover:italic hover:font-medium text-black text-center text-nowrap"} onClick={solarDisplayThird}>Exhibition 3</div>
+          </div>
+          <div>
+            <div>
+              <divv></divv>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 items-center justify-center content-center'>
+                <img src={ElectricExhibit} className='lg:col-start-1 object-cover h-[300px] w-full rounded-lg' alt='colited_image' />
+                <img src={AllStaff} className='lg:col-start-2 object-cover h-[500px] w-full rounded-lg' alt='colited_image' />
+                <img src={NewWorkhub} className='lg:col-start-3 object-cover h-[300px] w-full rounded-lg' alt='colited_image' />
+              </div>
+            </div>
           </div>
         </div>
       </section>
