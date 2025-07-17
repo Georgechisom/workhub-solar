@@ -90,7 +90,7 @@ const HomePage = () => {
             <div><h1 className='font-semibold text-sm md:text-base text-right'>Roofing and furniture</h1></div>
         </div>
       </div>
-    </div>,
+    </div>,                                                       
     <div key="Automobile" className='service-div mt-6 ml-[10%] md:ml-[20%]'>
       <div className='relative border-2 border-black w-full md:w-[95%]'>
         <div className="specky absolute left-[0] top-[0] h-full w-[7px] rounded-tr-[50%] rounded-br-[50%]"></div>
@@ -101,7 +101,7 @@ const HomePage = () => {
             <div><h1 className='font-semibold text-sm md:text-base text-right'>Automobile services</h1></div>
         </div>
       </div>
-    </div>,
+    </div>,                                                   
     <div key="building" className='service-div mt-6 mr-[10%] md:mr-[20%]'>
       <div className='relative border-2 border-black w-full md:w-[95%]'>
         <div className="specky absolute left-[0] top-[0] h-full w-[7px] rounded-tr-[50%] rounded-br-[50%]"></div>
